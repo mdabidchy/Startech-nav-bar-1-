@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}                                                                                 
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: 'Alumni Sans Collegiate One';
+    background: #1D2B64;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+
+
+    
+}
+nav{
+    text-align:center;
+    border:2px solid #F4F6F7 ;
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    padding:20px 35px;
+    position:relative;
+    
+}
+nav ul li a{
+    color:black;
+    display:block;
+    
+
+}
+nav ul li:hover> a{
+    color:orangered;
+    
+}
+.submenu{
+    position:absolute;
+    text-align:left;
+    width:200px;
+    border:1px solid #ccc;
+    border-top: 4px solid orangered;
+    opacity:0;
+    visibility: hidden;
+    transition: 0.7s;
+    margin:80px;
+
+}
+    
+
+.submenu li a{
+    font-size:medium;
+    
+    font-family: 'Nosifer';
+}
+    .submenu li{
+        display: block;
+
+    }
+    
+.submenu li:hover >a{
+    background-color: orangered;
+    color:white;
+}
+nav ul li:hover >.submenu{
+    opacity:1;
+    visibility: visible;
+    margin:0;
+}
+.submenu .submenu{
+    left:100%;
+    top:0;
+}
